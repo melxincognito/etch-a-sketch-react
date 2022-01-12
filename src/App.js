@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BlocksRendered from "./components/BlocksRendered";
+import MainContainer from "./components/Container";
+import Header from "./components/Header";
+import ClearBoardBtn from "./components/ClearBoardBtn";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header style={{ marginTop: "10px" }} />
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          margin: "10px",
+        }}
+      >
+        <div>
+          <MainContainer>
+            <BlocksRendered />
+          </MainContainer>
+        </div>
+        <div style={{ marginLeft: "10px" }}>
+          <ClearBoardBtn />
+        </div>
+      </div>
     </div>
   );
 }
