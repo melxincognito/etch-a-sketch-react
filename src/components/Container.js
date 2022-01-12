@@ -9,7 +9,7 @@ export default function MainContainer(props) {
         display: "flex",
         flexWrap: "wrap",
         width: "554px",
-        height: "556px",
+        height: "506px",
         border: "solid black",
         bgcolor: "pink",
       }}
