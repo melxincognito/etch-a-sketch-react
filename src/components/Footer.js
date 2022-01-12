@@ -1,13 +1,13 @@
 import React from "react";
-import { Box, Paper, Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 
-export default function Header() {
+export default function Footer() {
   return (
-    <>
+    <div>
       <Paper
         sx={{
           position: "fixed",
-          top: 0,
+          bottom: 0,
           left: 0,
           right: 0,
           color: "white",
@@ -16,12 +16,15 @@ export default function Header() {
           alignContent: "center",
           justifyContent: "center",
         }}
+        elevation={5}
       >
-        <Typography variant="h4" color="white" fontFamily={"cursive"}>
+        {" "}
+        <Typography fontFamily="cursive">
           {" "}
-          👩🏻‍🎨 Etch-A-Sketch 🎨{" "}
+          © 2022 - melxincögnito | All Rights Reserved | Designed by Mel
+          Incögnito{" "}
         </Typography>
       </Paper>
-    </>
+    </div>
   );
 }

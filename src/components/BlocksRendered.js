@@ -10,6 +10,5 @@ export default function BlocksRendered() {
     }
     return array;
   }
-  // Need to write a function that will create these Blocks dynamically
   return <>{createBlocks(10)}</>;
 }

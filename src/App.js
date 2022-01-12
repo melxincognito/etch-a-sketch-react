@@ -3,11 +3,12 @@ import BlocksRendered from "./components/BlocksRendered";
 import MainContainer from "./components/Container";
 import Header from "./components/Header";
 import ClearBoardBtn from "./components/ClearBoardBtn";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Header style={{ marginTop: "10px" }} />
+      <Header />
       <div
         style={{
           display: "flex",
@@ -16,7 +17,7 @@ function App() {
           margin: "10px",
         }}
       >
-        <div>
+        <div style={{ marginTop: 60 }}>
           <MainContainer>
             <BlocksRendered />
           </MainContainer>
@@ -25,6 +26,7 @@ function App() {
           <ClearBoardBtn />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

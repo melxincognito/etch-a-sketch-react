@@ -9,7 +9,7 @@ export default function ClearBoardBtn() {
   return (
     <div>
       <Button
-        sx={{ bgcolor: "purple", color: "white" }}
+        sx={{ bgcolor: "#8748ae", color: "white" }}
         onClick={clearBoardFunction}
       >
         {" "}
