@@ -6,7 +6,7 @@ export default function BlocksRendered() {
     const array = [];
 
     for (var i = 0; i < num * num; i++) {
-      array.push(<Block> {i} </Block>);
+      array.push(<Block key={i}> {i} </Block>);
     }
     return array;
   }
